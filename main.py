@@ -13,7 +13,6 @@ conn = sqlite3.connect("data.sqlite")
 df_first_five = pd.read_sql("""
 SELECT employeeNumber, lastName
 FROM employees
-LIMIT 5
 """, conn)
 
 # print("\nFirst Five Employees")
